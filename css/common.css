@@ -25,6 +25,40 @@ body {
 
 /*--- header--- */
 
+.container {
+  display: flex;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 32px 0;
+}
+
+.logo-header {
+  margin-right: 93px;
+}
+
+.item:not(:last-child) {
+  padding-right: 50px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  padding-left: 0;
+}
+
+.site-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
 .logo-header {
   font-family: Raleway, sans-serif;
   color: var(--primary-text-color);
