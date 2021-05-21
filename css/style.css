@@ -73,6 +73,9 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
   color: var(--primary-text-color);
   background-color: var(--button-bg-color);
   text-decoration: none;
