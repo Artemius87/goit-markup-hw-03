@@ -26,10 +26,17 @@ body {
 /*--- header--- */
 
 .container {
-  display: flex;
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.centered {
+  text-align: center;
+}
+
+.container.align {
+  display: flex;
 }
 
 .header {
