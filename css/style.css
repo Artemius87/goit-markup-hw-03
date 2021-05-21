@@ -20,6 +20,14 @@
 
 /* features */
 
+.features .list {
+  display: flex;
+}
+
+.features {
+  margin: 94px auto;
+}
+
 .features .title {
   font-weight: 700;
   font-size: 14px;
