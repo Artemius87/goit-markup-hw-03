@@ -25,6 +25,10 @@ body {
 
 /* header */
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .navigation {
   display: flex;
 }
