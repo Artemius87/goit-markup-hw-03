@@ -23,50 +23,22 @@ body {
   list-style: none;
 }
 
-/*--- header--- */
+/* header */
 
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.centered {
-  text-align: center;
-}
-
-.container.align {
+.navigation {
   display: flex;
 }
 
-.header {
-  padding: 32px 0;
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo-header {
   margin-right: 93px;
-}
-
-.item:not(:last-child) {
-  padding-right: 50px;
-}
-
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-
-.site-nav {
-  display: flex;
-  padding-left: 0;
-}
-
-.site-contacts {
-  display: flex;
-  margin-left: auto;
-}
-
-.logo-header {
+  margin-top: 24px;
+  margin-bottom: 25px;
   font-family: Raleway, sans-serif;
   color: var(--primary-text-color);
   font-weight: 700;
@@ -79,12 +51,21 @@ body {
   color: var(--accent-color);
 }
 
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
 .site-nav .link {
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
   text-decoration: none;
 }
 
@@ -95,6 +76,15 @@ body {
 
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+.site-contacts {
+  display: flex;
+  /* justify-content: flex-end; */
+}
+
+.site-contacts .item + .item {
+  margin-left: 50px;
 }
 
 .site-contacts .link {
@@ -113,11 +103,21 @@ body {
 }
 
 /* footer */
+
+.address {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+
 footer {
   background-color: #2f303a;
 }
 
 .logo-footer {
+  display: inline-block;
+  padding-bottom: 20px;
+  padding-top: 60px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -135,11 +135,13 @@ footer {
 }
 
 .mail-footer {
+  margin-top: 9px;
+  margin-bottom: 9px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
-  color: var(--secondary-text-color);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 
@@ -153,7 +155,7 @@ footer {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
-  color: var(--secondary-text-color);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 

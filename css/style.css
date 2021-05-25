@@ -1,34 +1,60 @@
 /* стили для index.html */
 
+/* Сброс стилей  <h1>...<h6>, <p> и <ul> */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 /* tagline */
+
 .tagline {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
+  text-align: center;
 }
 
 .tagline .title {
-  margin: 0 auto 30px auto;
+  margin: 0 auto 30px;
   width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  color: var(--white-color);
   text-transform: uppercase;
+  color: var(--white-color);
 }
 
 /* features */
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .features .list {
   display: flex;
 }
 
-.features {
-  margin: 94px auto;
-}
-
 .features .title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -41,10 +67,31 @@
   color: var(--secondary-text-color);
 }
 
+.features .spec {
+  width: 270px;
+}
+
+.spec + .spec {
+  margin-left: 30px;
+}
+
 /* activity */
+
+.activity {
+  padding-bottom: 94px;
+}
+
+.activity .list {
+  display: flex;
+}
+
+.example + .example {
+  margin-left: 30px;
+}
 
 .activity .title,
 .team .title {
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -54,11 +101,23 @@
 
 /* team */
 
+.team .list {
+  display: flex;
+}
+
+.cards + .cards {
+  margin-left: 30px;
+}
+
 .team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team .employee {
+  padding-top: 30px;
+  padding-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -67,6 +126,7 @@
 }
 
 .team .profession {
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -76,36 +136,24 @@
 /* button */
 
 .button {
+  padding: 10px 32px;
+  border: none;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  border: none;
-  border-radius: 4px;
-  text-align: center;
   color: var(--primary-text-color);
   background-color: var(--button-bg-color);
   text-decoration: none;
 }
 
 .button.primary {
-  min-width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  padding: 10px 32px;
-  cursor: pointer;
-}
-
-.button.primary {
   color: var(--white-color);
   background-color: var(--accent-color);
-}
-
-.button.primary:hover,
-.button:focus {
-  background-color: var(--white-color);
-  color: var(--accent-color);
 }
 
 .button:hover,
