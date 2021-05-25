@@ -20,6 +20,8 @@ ul {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+
+  outline: 2px solid green;
 }
 
 /* tagline */
@@ -136,24 +138,16 @@ ul {
 /* button */
 
 .button {
-  padding: 10px 32px;
-  border: none;
-  min-width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  font-family: inherit;
-  font-weight: 700;
+  padding: 6px 22px;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  border: none;
+  text-align: center;
   color: var(--primary-text-color);
   background-color: var(--button-bg-color);
-  text-decoration: none;
-}
-
-.button.primary {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  border-radius: 4px;
 }
 
 .button:hover,
@@ -162,7 +156,31 @@ ul {
   color: var(--white-color);
 }
 
+.button-primary {
+  padding: 10px 32px;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  border: none;
+  text-align: center;
+  line-height: 1.87;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  color: var(--accent-color);
+  background-color: var(--white-color);
+}
+
 /* Стили для portfolio.html */
+
+.portfolio {
+  padding: 94px 0;
+}
 
 .portfolio .title {
   font-weight: 700;
@@ -176,4 +194,38 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   color: var(--secondary-text-color);
+}
+
+.portfolio .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* filters */
+
+.titles {
+  padding: 20px 24px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.btn + .btn {
+  margin-left: 8px;
+}
+
+.projects {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 370px;
+  min-height: 404px;
+  border: 0.5px solid #eeeeee;
+}
+
+.projects:nth-child(3n) {
+  margin-right: 0;
 }
