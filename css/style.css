@@ -20,9 +20,12 @@ ul {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-
-  /* outline: 2px solid green; */
 }
+.cont-footer {
+  height: 252px;
+}
+
+/* outline: 2px solid green; */
 
 /* tagline */
 
